@@ -1,8 +1,8 @@
 package example.controller;
 
-import com.example.dao.OtpConfigDao;
-import com.example.model.OtpConfig;
-import com.example.util.JwtUtil;
+import example.dao.OtpConfigDao;
+import example.model.OtpConfig;
+import example.util.JwtUtil;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import org.json.JSONObject;

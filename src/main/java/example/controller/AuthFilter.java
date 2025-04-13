@@ -1,6 +1,6 @@
 package example.controller;
 
-import com.example.util.JwtUtil;
+import example.util.JwtUtil;
 import com.sun.net.httpserver.Filter;
 import com.sun.net.httpserver.HttpExchange;
 import io.jsonwebtoken.Claims;

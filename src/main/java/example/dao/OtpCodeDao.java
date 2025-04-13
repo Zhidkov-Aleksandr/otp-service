@@ -1,18 +1,30 @@
 package example.dao;
 
-import com.example.model.OtpCode;
+import example.model.OtpCode;
 import java.sql.*;
 import java.time.LocalDateTime;
 import java.util.Optional;
+
+import example.model.OtpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class OtpCodeDao {
     private static final Logger logger = LoggerFactory.getLogger(OtpCodeDao.class);
     private final Connection connection;
+    private String status;
 
     public OtpCodeDao(Connection connection) {
         this.connection = connection;
+    }
+
+    public void setStatus(OtpStatus status) {
+        this.status = status.toString();
+    }
+
+
+    public OtpStatus getStatus() {
+        return OtpStatus.valueOf(status);
     }
 
     public void save(OtpCode otp) throws SQLException {

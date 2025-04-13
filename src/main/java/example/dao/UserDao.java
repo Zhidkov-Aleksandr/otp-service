@@ -1,6 +1,6 @@
 package example.dao;
 
-import com.example.model.User;
+import example.model.User;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;

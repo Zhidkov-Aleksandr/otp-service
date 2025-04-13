@@ -1,6 +1,6 @@
 package example.dao;
 
-import com.example.model.OtpConfig;
+import example.model.OtpConfig;
 import java.sql.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

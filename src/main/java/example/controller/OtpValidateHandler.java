@@ -1,7 +1,7 @@
 package example.controller;
 
-import com.example.service.OtpService;
-import com.example.util.JwtUtil;
+import example.service.OtpService;
+import example.util.JwtUtil;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import org.json.JSONObject;
